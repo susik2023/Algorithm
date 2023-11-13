@@ -5,7 +5,7 @@ class Solution {
         ArrayList<Integer> arr = new ArrayList<>();
         int x = ((int)Math.log10(n)+1);
         for(int i=0;i<x;i++){
-            arr.add(i,Long.valueOf(n%10).intValue());
+            arr.add(i,(int)(n%10));
             n/=10;
         }
         Collections.sort(arr);
